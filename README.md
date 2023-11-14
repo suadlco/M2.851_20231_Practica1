@@ -26,3 +26,7 @@ Para realizar web scraping usando el código generado, basta con replicar el có
 ```
 
 Hay que tener en cuenta que el enlace pasado al método __get_top100_megaCap__ debe generarse de manera manual, puesto que no está permitido el acceso automatizado a ese directorio. Además, es un enlace que se genera al momento y se borra a los pocos días.
+
+## Dataset Generado
+Puedes acceder al dataset generado a través del siguiente enlace:
+[Dataset en Zenodo](https://doi.org/10.5281/zenodo.10119584)
