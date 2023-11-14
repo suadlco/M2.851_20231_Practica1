@@ -17,10 +17,12 @@ Esta actividad se ha realizado en el marco de la asignatura "Tipología y Ciclo 
 ## Cómo Usar el Código Generado
 
 Para realizar web scraping usando el código generado, basta con replicar el código del archivo __main.py__:
+```
     yahoo_scraper = YahooFinanceScraper()
     yahoo_scraper.get_robots_txt()
     quote_links = yahoo_scraper.get_top100_megaCap('https://es.finance.yahoo.com/screener/unsaved/5be828dc-55da-4794-9ed1-2412da5d8d88?offset=0&count=100')
     data = yahoo_scraper.scrape_all_history_data(quote_links)
     yahoo_scraper.data2csv("dataset.csv", data)
+```
 
 Hay que tener en cuenta que el enlace pasado al método __get_top100_megaCap__ debe generarse de manera manual, puesto que no está permitido el acceso automatizado a ese directorio. Además, es un enlace que se genera al momento y se borra a los pocos días.
